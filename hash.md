@@ -44,3 +44,17 @@ grades.select {|name, grade| grade < 97}
 grades.select { |k, v| k == :alice }
 # ==> {:alice=>100}
 ```
+Operacja na tablicach Array
+```
+tablica = [1,2,3,4,5] 		#przykladowa tablica
+tab1 = ["zero", "jeden"]	# inna metoda tworzenia tablicy
+tab2 = Array.new(5) {|i| i*i}	# wypisze 0,1,4,9,16
+
+```
+drukowanie tablicy
+```
+array.each do |x|
+  x += 10
+  print "#{x}"
+end
+```
