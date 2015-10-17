@@ -1,6 +1,6 @@
-## Testowanie aplikacji w Ruby, matwb@ug.edu.pl
+## Testowanie aplikacji w Ruby, mbeiger@sigma.ug.edu.pl
 
-Podrêczne linki:
+PodrÄ™czne linki:
 
 1. [Dokumentacja RSpec](http://rspec.info/):
   - [rspec-core](https://github.com/rspec/rspec-core)
@@ -15,5 +15,5 @@ Podrêczne linki:
 ## Zadania
 
 1. [ ] [Learn X in Y minutes, where X = Ruby Array/Hash/Enumerable](ruby.md)
-2. [ ] [Coœ do przetestowania na pocz¹tek](/)
+2. [ ] [CoÅ› do przetestowania na poczÄ…tek](/)
 3. [ ] [Program/Biblioteka/Aplikacja WWW](/)
