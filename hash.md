@@ -1,6 +1,6 @@
-Moj tutorial:
+#Moj tutorial:
 
-Operacje na tablicach ( Hash ) :
+#Operacje na tablicach ( Hash ) :
 ```
 tablica = Hash.new 	#utworzenie nowego pustego obiektu typu Hash
 tablica["jeden"] = 1 	#Powi¹zanie ³añcucha "jeden" z obiektem 
@@ -8,7 +8,7 @@ tablica["dwa"] = 2	#U¿ycie notacji tablicowej
 tablica["trzy"] = 3
 sum = tablica["jeden"] + tablica["dwa"] # w ten sposó obiera sie wartoœci
 ```
-# druga metoda tworzenia obiektu typu Hash
+druga metoda tworzenia obiektu typu Hash
 ```
 tablica = { 
   "jeden" => 1,
@@ -16,7 +16,7 @@ tablica = {
   "trzy" => 3
 }
 ```
-#drukowanie
+drukowanie Hashy
 ```
 my_hash.each { |x, y| 
 puts "#{x}: #{y}" }
@@ -24,13 +24,13 @@ puts "#{x}: #{y}" }
  "dog" => "woof"
  "cat" => "meow"
 ```
-#sortowanie 
+sortowanie Hashy
 ```
 frequencies = frequencies.sort_by do |letter,number|
     number
 end
 ```
-#wyswietlanie hashy z warunkami (select)
+wyswietlanie hashy z warunkami (select)
 ```
 grades = { alice: 100,
   bob: 92,
