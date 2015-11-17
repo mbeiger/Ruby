@@ -3,10 +3,10 @@
 #Operacje na tablicach ( Hash ) :
 ```
 tablica = Hash.new 	#utworzenie nowego pustego obiektu typu Hash
-tablica["jeden"] = 1 	#Powi±zanie ³añcucha "jeden" z obiektem 
+tablica["jeden"] = 1 	#Powi¹zanie ³añcucha "jeden" z obiektem 
 tablica["dwa"] = 2	#U¿ycie notacji tablicowej
 tablica["trzy"] = 3
-sum = tablica["jeden"] + tablica["dwa"] # w ten sposób obiera sie warto¶ci
+sum = tablica["jeden"] + tablica["dwa"] # w ten sposó obiera sie wartoœci
 ```
 druga metoda tworzenia obiektu typu Hash
 ```
@@ -94,4 +94,3 @@ a.drop_while { |i| i<3}	#=> [3,4,5,0]
 (1..10).find.all { |i| i%3 ==0} #=>[3,6,9]
 (1..4).map {|i| i*i}	#=>[1,4,9,16]
 ```
-
