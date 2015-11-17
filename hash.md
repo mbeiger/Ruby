@@ -1,7 +1,7 @@
 #Moj tutorial:
 
 #Operacje na tablicach ( Hash ) :
-```
+```less
 tablica = Hash.new 	#utworzenie nowego pustego obiektu typu Hash
 tablica["jeden"] = 1 	#Powi±zanie ³añcucha "jeden" z obiektem 
 tablica["dwa"] = 2	#U¿ycie notacji tablicowej
@@ -9,7 +9,7 @@ tablica["trzy"] = 3
 sum = tablica["jeden"] + tablica["dwa"] # w ten sposób obiera sie warto¶ci
 ```
 druga metoda tworzenia obiektu typu Hash
-```
+```less
 tablica = { 
   "jeden" => 1,
   "dwa" => 2,
@@ -17,7 +17,7 @@ tablica = {
 }
 ```
 drukowanie Hashy
-```
+```less
 my_hash.each { |x, y| 
 puts "#{x}: #{y}" }
 
@@ -25,13 +25,13 @@ puts "#{x}: #{y}" }
  "cat" => "meow"
 ```
 sortowanie Hashy
-```
+```less
 frequencies = frequencies.sort_by do |letter,number|
     number
 end
 ```
 wyswietlanie hashy z warunkami (select)
-```
+```less
 grades = { alice: 100,
   bob: 92,
   chris: 95,
@@ -45,26 +45,26 @@ grades.select { |k, v| k == :alice }
 # ==> {:alice=>100}
 ```
 #Operacja na tablicach Array
-```
+```less
 tablica = [1,2,3,4,5] 		#przykladowa tablica
 tab1 = ["zero", "jeden"]	# inna metoda tworzenia tablicy
 tab2 = Array.new(5) {|i| i*i}	# wypisze 0,1,4,9,16
 
 ```
 drukowanie tablicy
-```
+```less
 array.each do |x|
   x += 10
   print "#{x}"
 end
 ```
 #Modu³ Enumerable
-```
+```less
 %w[ant bear cat].all? { |     | wor.length >= 3} #=> true
 %w[ant bear cat].all? { |word| wor.length >= 4} #=> false
 [nil, true, 99].all? 				#=> false
 ```
-```
+```less
 [3,1,4,1,5,9,2,6,5,3,5].chunk { |n|
 n.even ?
 }.each { |even, ary|
@@ -75,21 +75,21 @@ p [even,ary]
 # [false,[1,5,9]]
 # [false,[5,3,5]]
 ```
-```
+```less
 (1..4).map { |i| i*i } 	#=>[14,9,16]
 (1..4).collect {"cat" }	#=>["cat","cat","cat", "cat"]
 ```
-```
+```less
 ary = [1,2,4,2]
 ary.count 	#=> 4
 ary.count(2)	#=>2
 ary.count{ |x| x%2==0 } #=>3
 ```
-```
+```less
 a = [1,2,3,4,5,0]
 a.drop_while { |i| i<3}	#=> [3,4,5,0]
 ```
-```
+```less
 (1,,7).to_a 	#=>[1,2,3,4,5,6,7]
 (1..10).find.all { |i| i%3 ==0} #=>[3,6,9]
 (1..4).map {|i| i*i}	#=>[1,4,9,16]
